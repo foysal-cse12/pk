@@ -1,0 +1,378 @@
+/*PK Garements Stylesheet*/    
+
+
+body {
+	padding: 60px 0px;
+	margin: 0 auto;
+	color:#fff;
+	font-size: 15px;
+	font-family: Verdana;
+
+}
+/* Navbar Css*/
+.logo{
+	font-family: 'Tangerine', serif;
+    font-size: 48px;
+    color: #fff !important;
+    font-weight: bold;
+}
+.logo span{
+	color: #A17388;
+}
+.navbar-default {
+    background-color: #0a4446;
+    border-color: #e7e7e7;
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-nav> li > a:Hover{
+    color: #F8C778 !important;
+}
+.navbar-collapse {
+	position: relative;
+	padding-top: 30px !important;
+	max-height: 270px;
+}
+.navbar-collapse form[role="search"] {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	z-index: 0;
+}
+.navbar-collapse form[role="search"] button,
+.navbar-collapse form[role="search"] input {
+	padding: 8px 12px;
+	border-radius: 0px;
+	border-width: 0px;
+	color: #fff;
+	background-color: #0a4446;
+	border-color: rgb(231, 231, 231);
+	box-shadow: none;
+	outline: none;
+	}
+.navbar-collapse form[role="search"] input {
+	padding: 16px 12px;
+	font-size: 14pt;
+	font-style: italic;
+	color: rgb(160, 160, 160);
+	box-shadow: none;
+}
+.navbar-collapse form[role="search"] button[type="reset"] {
+	display: none;
+}
+.user{
+	margin-left: -100px;
+}
+.fa-remove{
+	color: red;
+}
+@media (min-width: 768px) {
+		.navbar-collapse {
+			padding-top: 0px !important;
+			padding-right: 38px !important;
+			color:#fff !important;
+		}
+		.navbar-collapse form[role="search"] {
+			width: 38px;
+		}
+		.navbar-collapse form[role="search"] button,
+		.navbar-collapse form[role="search"] input {
+			padding: 15px 12px;
+		}
+		.navbar-collapse form[role="search"] input {
+			font-size: 18pt;
+			opacity: 0;
+			display: none;            
+            height: 50px;
+		}
+		.navbar-collapse form[role="search"].active {
+			width: 100%;
+		}
+		.navbar-collapse form[role="search"].active button,
+		.navbar-collapse form[role="search"].active input {
+			display: table-cell;
+			opacity: 1;
+		}
+    	.navbar-collapse form[role="search"].active input {
+			width: 100%;
+		}
+	}
+/*Main Style*/
+.panel-default>.panel-heading{
+    color: #fff;
+    background-color: #3C7274;
+    border-color: #ddd;
+   	font-weight: bold;
+   	font-size: 20px;
+}
+
+div.panel:first-child {
+    margin-top:20px;
+}
+
+div.treeview {
+    min-width: 100px;
+    min-height: 100px;
+    
+    max-height: 256px;
+    overflow:auto;
+	
+	padding: 4px;
+	
+	margin-bottom: 20px;
+	
+	color: #369;
+	
+	border: solid 1px;
+	border-radius: 4px;
+}
+div.treeview ul:first-child:before {
+    display: none;
+}
+.treeview, .treeview ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+	color: #369;
+}
+.treeview ul {
+    margin-left:1em;
+    position:relative
+}
+.treeview ul ul {
+    margin-left:.5em
+}
+.treeview ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    left:0;
+    border-left:1px solid;
+    
+    /* creates a more theme-ready standard for the bootstrap themes */
+    bottom:15px;
+}
+.treeview li {
+    margin:0;
+    padding:0 1em;
+    line-height:2em;
+    /*font-weight:700;*/
+    position:relative;
+    font-size: 1em;
+}
+.treeview ul li:before {
+    content:"";
+    display:block;
+    width:10px;
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:1em;
+    left:0
+}
+
+.treeview li a {
+    text-decoration: none;
+    color:inherit;
+    
+    cursor:pointer;
+}
+.treeview li button, .treeview li button:active, .treeview li button:focus {
+    text-decoration: none;
+    color:inherit;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}
+.footer{
+	font-family: 'Tangerine', serif;
+    font-size: 30px;
+    color: #000;
+}
+.footer span{
+	color: red !important;
+	font-size: 50px
+}
+
+
+
+/*Log in page css*/
+.background{
+	background: (left, rgba(10,68,70,0.8), rgba(44,173,173,.9));
+	background: -webkit-linear-gradient(left, rgba(10,68,70,0.8), rgba(44,173,173,.9)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, rgba(10,68,70,0.8), rgba(44,173,173,.9)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, rgba(10,68,70,0.8), rgba(44,173,173,.9)); /* For Firefox 3.6 to 15 */
+	background-size: cover;
+}
+#logbox {
+ 	padding: 10px;
+	margin: 10px auto;
+	width: 300px;
+	background-color: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+.log-titel{
+	text-align: center;
+	font-size: 375%;
+	color: #757575;
+	font-family: 'Tangerine', serif;
+	color: #000;
+	font-weight: bold;
+}
+.log-titel span{
+	
+	color: #A17388;
+
+}
+#logbox input {
+	font-family: Verdana;
+	font-size: 15px;
+	color: #000;
+}
+
+.input {
+	width: 75%;
+	height: 50px;
+	display: block;
+	margin: 0 auto 15px;
+	padding: 0 15px;
+	border: none;
+	border-bottom: 2px solid #ebebeb;
+}
+.input:focus {
+	outline: none;
+	border-bottom-color: #3CC !important;
+}
+.input:hover {
+	border-bottom-color: #dcdcdc;
+}
+.input:invalid {
+	box-shadow: none;
+}
+
+.pass:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.inputButton {
+	position: relative;
+	width: 85%;
+	height: 50px;
+	display: block;
+	margin: 30px auto 30px;
+	color: white;
+	background-color: #0A4446;
+	border: none;
+	-webkit-box-shadow: 0 5px 0 #2CADAD;
+	-moz-box-shadow: 0 5px 0 #2CADAD;
+	box-shadow: 0 5px 0 #2CADAD;
+	font-family: 'Tangerine', serif !important;
+	color: #fff !important;
+	font-weight: bold;
+	font-size: 2em !important;
+	line-height: 1em;
+}
+.inputButton:hover {
+	top: 2px;
+	-webkit-box-shadow: 0 3px 0 #2CADAD;
+	-moz-box-shadow: 0 3px 0 #2CADAD;
+	box-shadow: 0 3px 0 #2CADAD;
+}
+.inputButton:active {
+	top: 5px;
+	box-shadow: none;
+}
+.inputButton:focus {
+	outline: none;
+}
+.forget span{
+	font-family: 'Tangerine', serif !important;
+	color: red;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+/*New order Form */
+.main{
+ 	margin-top: 10px;
+}
+
+.main h1.title { 
+	font-size: 30px;
+	font-family: 'Passion One', cursive; 
+	font-weight: 400;
+	color: #000; 
+}
+
+.main hr{
+	width: 20%;
+	color: #0A4446 !important;
+}
+
+.form-group{
+	margin-bottom: 15px;
+}
+
+.main label{
+	margin-bottom: 15px;
+	color: #000;
+	font-family: 'Passion One', cursive;
+}
+.main select{
+    font-size: 11px;
+    padding-top: 3px;
+}
+.select{
+    font-size: 11px;
+    padding-top: 13px;
+    margin-top: 3px;
+}
+.main input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+.main textarea,
+textarea::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+.main-login{
+ 	background-color: #f0f0f0;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.main-center{
+ 	margin-top: 30px;
+    padding: 40px 40px;
+
+}
+
+.main>.login-button{
+	margin-top: 5px;
+}
+/*Order Lidt Css*/
+.list{
+	color: #000;
+	font-family: 'Passion One', cursive;
+	font-size: 2em;
+}
